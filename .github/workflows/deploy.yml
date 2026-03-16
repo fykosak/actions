@@ -23,4 +23,5 @@ jobs:
             --header "X-Hub-Signature-256: sha256=$REQUEST_DIGEST" \
             --header "Content-Type: text/plain" \
             --data "$REQUEST_BODY" \
-            --no-progress-meter
+            --no-progress-meter \
+            --fail-with-body
